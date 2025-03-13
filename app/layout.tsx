@@ -30,7 +30,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </NavList>
               </Nav>
             </Header>
-            <Main>{children}</Main>  {/* Aquí se renderiza el contenido de cada página */}
+            <Main>{children}</Main>
             <Footer>
               <p>&copy; 2025 Mi Aplicación</p>
             </Footer>
