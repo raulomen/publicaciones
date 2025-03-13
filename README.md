@@ -23,9 +23,12 @@ Sigue estos pasos para instalar y ejecutar la aplicación en tu entorno local:
 5. **Uso**:
 Para iniciar la aplicación en modo de desarrollo, ejecuta el siguiente comando:
 
-Si usas npm:
+Usar npm:
 
 ```bash
+
+npm install
+
 npm run dev
 
 6. **Explicación de la Estructura de Archivos**:
