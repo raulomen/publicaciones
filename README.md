@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+1. **Descripción General**:
+Este proyecto es una aplicación web construida con **Next.js 14**, **React 18**, y **TypeScript**. La aplicación consume datos de **JSONPlaceholder**, mostrando usuarios y publicaciones, con la capacidad de ver detalles de cada usuario y publicación, así como añadir comentarios. La aplicación utiliza **TanStack Query (React Query)** para manejar las peticiones, el caché y la revalidación de datos, así como **Server Components** en Next.js 14 para mejorar el rendimiento y la eficiencia.
 
-## Getting Started
+2. **Estructura del Proyecto**:
+   - Se incluye una representación de la estructura del proyecto para que cualquier persona que trabaje con el código pueda comprender rápidamente cómo está organizado.
 
-First, run the development server:
+3. **Requisitos Previos**:
+Antes de ejecutar la aplicación, asegúrate de tener instalados los siguientes programas:
+
+- **Node.js**: Necesitas tener instalado Node.js. Puedes descargarlo desde [aquí](https://nodejs.org/).
+- **npm o yarn**: Cualquier gestor de paquetes. Si no tienes uno instalado, puedes usar npm, que viene con Node.js. Si prefieres usar yarn, instálalo siguiendo las instrucciones [aquí](https://yarnpkg.com/getting-started/install).
+
+
+4. **Instalación**:
+Sigue estos pasos para instalar y ejecutar la aplicación en tu entorno local:
+
+1. **Clona el repositorio**:
+   
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   cd tu-repositorio
+
+5. **Uso**:
+Para iniciar la aplicación en modo de desarrollo, ejecuta el siguiente comando:
+
+Si usas npm:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. **Explicación de la Estructura de Archivos**:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+En esta sección, explicas con más detalle la función de los archivos y carpetas que has incluido en el proyecto.
+La estructura del proyecto está organizada de la siguiente manera:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **/app/layout.tsx**: Define la estructura básica de la aplicación, como el encabezado, la barra de navegación y el pie de página. Este archivo se usa para envolver las páginas.
+- **/app/page.tsx**: Página principal de la aplicación. Muestra una vista general con enlaces a las secciones de usuarios y publicaciones.
+- **/app/users/page.tsx**: Página que muestra una lista de todos los usuarios.
+- **/app/users/[id]/page.tsx**: Página que muestra los detalles de un usuario específico. Se utiliza cuando se navega a `/users/{id}`.
+- **/app/posts/page.tsx**: Página que muestra una lista de todas las publicaciones.
+- **/app/posts/[id]/page.tsx**: Página que muestra los detalles de una publicación específica. Se utiliza cuando se navega a `/posts/{id}`.
+- **/styles**: Contiene los archivos de estilo usando Styled Components. Cada archivo dentro de esta carpeta corresponde a los estilos de una parte específica de la aplicación.
 
-## Learn More
+7. **Contribuir**:
 
-To learn more about Next.js, take a look at the following resources:
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Haz un fork del proyecto.
+2. Crea una rama para tu característica o corrección de error: `git checkout -b feature/nueva-caracteristica`
+3. Realiza tus cambios y haz commit: `git commit -am 'Agregué una nueva característica'`
+4. Envía un pull request explicando tus cambios.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+¡Gracias por tu contribución!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+8. **Licencia**:
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
